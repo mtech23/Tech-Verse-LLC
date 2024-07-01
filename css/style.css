@@ -53,6 +53,73 @@ h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
+
+/* Custon Dropdown Start */
+.custom_dropdown_list {
+  list-style: none;
+  padding-left: 0;
+}
+.dropdown_linkBox {
+  display: block;
+  margin: 40px 0;
+  color: #000;
+}
+.dropdown_linkBox:hover {
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  text-decoration: none;
+}
+.dropdown_linkBox h4 {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Sora", sans-serif;
+  color: #02a9f7;
+}
+.dropdown_linkBox p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+.dropdown_head p {
+  font-size: 14px;
+}
+.custom_dropdown_sidebar {
+  background-color: #f5f5f5;
+  padding: 46px 46px 46px;
+  /* padding-top: 46px;
+  padding-bottom: 46px; */
+}
+.custom_dropdown_sidebarTitle {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Sora", sans-serif;
+}
+/* .customDropdown_left {
+  padding-top: 46px;
+  padding-left: 46px;
+  padding-bottom: 46px;
+} */
+.customDropdown_leftCol {
+  background-color: #fff;
+  padding: 46px 46px 46px;
+}
+#navbarDropdown {
+  position: relative;
+}
+
+.first-dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+}
+
+.showing {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Custon Dropdown ENd */
+
 .techVerse_heroContent {
   max-width: 1600px;
   margin: 0 auto;
@@ -111,6 +178,9 @@ h2 {
 
 .color-darkBlue {
   color: #02577a;
+}
+.color-darkBlue1 {
+  color: #2c5871;
 }
 .techVerse_hero_content p {
   line-height: 2;
@@ -385,7 +455,7 @@ h2 {
   position: absolute;
   left: 0;
   right: 0;
-  top: -16px;
+  top: -10px;
   margin: auto;
   width: 100%;
   display: flex;
@@ -394,7 +464,7 @@ h2 {
   z-index: 99;
 }
 .our-slider-img img {
-  width: 20.9%;
+  width: 20.1%;
 }
 
 .our-slider-webframe {
@@ -410,7 +480,7 @@ h2 {
   z-index: 99;
 }
 .our-slider-webframe img {
-  width: 48.9%;
+  width: 58.9%;
 }
 
 /* Portfolio ENd */
@@ -965,6 +1035,10 @@ h2 {
 }
 .footer_logo_img_box {
   margin: 0 0 20px;
+  max-width: 170px;
+}
+.footer_logo_img_box img {
+  width: 100%;
 }
 .techVerse_footer .foooter__subhead {
   font-family: "Poppins", sans-serif;
@@ -1469,10 +1543,12 @@ canvas.particles-js-canvas-el {
   padding: 180px 0 70px;
 
   position: relative;
+  overflow: hidden;
 }
 .realEstate_hero .inner-bgColor {
   background-image: url(../images/real-estate-hero-bg.png);
   opacity: 0.7;
+  background-position: top center;
 }
 .inner_hero .row {
   align-items: center;
@@ -1494,7 +1570,7 @@ canvas.particles-js-canvas-el {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 15px 0;
+  margin: 25px 0;
 }
 .hero_social-icon img {
   width: 50px;
@@ -1799,7 +1875,129 @@ canvas.particles-js-canvas-el {
   text-align: center;
 }
 
+/* Real Estate start */
+.realEstate-appSec_title h2 {
+  margin-bottom: 10px !important;
+}
+.realEstate-appSec_title p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.reApp_box_icon img {
+  width: 100%;
+}
+.reApp_box_icon {
+  max-width: 100px;
+}
+.reApp_box h4 {
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.reApp_box p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.app_devSec {
+  background-image: url(../images/real-estate-secBG.png);
+  background-size: cover;
+  background-position: top center;
+  padding: 60px 0;
+  margin-bottom: 140px;
+}
+.services-abbout1.app_devSec .sec_title {
+  color: #fff;
+  text-align: center;
+  max-width: 968px;
+  margin: 0 auto;
+}
+.services-abbout1.app_devSec .sec_title h2 {
+  color: #fff;
+}
+.app_devBoxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  /* margin-bottom: -10%; */
+  margin-bottom: -200px;
+  margin-top: 15px;
+}
+.app_devBoxe {
+  background: #fff;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 8px solid #02a9f7;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.app_devBoxeIcon {
+  width: 60px;
+  margin: 0 auto;
+}
+.app_devBoxeIcon img {
+  width: 100%;
+}
+.app_devBoxe h4 {
+  font-size: 20px;
+  color: #02a9f7;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.app_devBoxe p {
+  font-size: 14px;
+  line-height: 2;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.re_appDev_btns {
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.icon_box {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+.box_icon {
+  width: 60px;
+}
+.box_icon img {
+  width: 100%;
+}
+.icon_box h4 {
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+/* Real Estate End */
+
 /* Inner Pages End */
+
+/* .service-hero-bg {
+  transform: scale(1.7) !important;
+  transform-origin: center;
+} */
+
+.inner-hero_rightCol {
+  position: relative;
+}
+.inner-hero_rightCol:after {
+  content: "";
+  width: 70px;
+  height: 60px;
+  background: url(../images/donat-blue.png);
+  /* background-color: red; */
+  top: 0px;
+  right: 0;
+  position: absolute;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: animation1 6s linear 0s infinite normal none;
+}
 
 /* Media Quries */
 @media (max-width: 1600px) {
@@ -1824,9 +2022,9 @@ canvas.particles-js-canvas-el {
   .contactUs-laptop {
     width: 120%;
   }
-  .our-slider-webframe img {
+  /* .our-slider-webframe img {
     width: 57.9%;
-  }
+  } */
   .icc img {
     width: 100px;
     height: 100px;
@@ -1881,6 +2079,15 @@ canvas.particles-js-canvas-el {
   }
   .get_discount {
     left: -50.6%;
+  }
+  .first-dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 90%;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 @media (max-width: 1280px) {
@@ -2066,6 +2273,24 @@ canvas.particles-js-canvas-el {
   .hero_social-icon img {
     width: 33px;
   }
+  .app_devBoxe {
+    padding: 10px;
+    border-bottom-width: 5px;
+  }
+  .app_devBoxe h4 {
+    font-size: 16px;
+  }
+
+  .app_devBoxe p {
+    line-height: 1.5;
+  }
+
+  .app_devBoxes {
+    margin-bottom: -160px;
+  }
+  .icon_box h4 {
+    font-size: 13px;
+  }
 }
 @media (max-width: 991px) {
   .techVerse_navbar .navbar-toggler {
@@ -2076,6 +2301,9 @@ canvas.particles-js-canvas-el {
   }
   .techVerse_navbar .navbar-toggler-icon {
     background: #fff;
+  }
+  .techVerse_navbar .navbar-toggler i {
+    color: #fff;
   }
   .techVerse_navbar .navbar-collapse {
     background: #fff;
@@ -2210,6 +2438,23 @@ canvas.particles-js-canvas-el {
     right: 34%;
     top: 200px;
   }
+  .our-slider-img {
+    top: -4px;
+  }
+  .our-slider-img img {
+    width: 18.6%;
+  }
+  .app_devBoxes {
+    gap: 15px;
+  }
+  .mobileApp_devSec_img {
+    max-width: 448px;
+    display: block;
+    margin: 20px auto 0;
+  }
+  .icon_box {
+    margin: 0 0;
+  }
 }
 @media (max-width: 800px) {
   .get_discount {
@@ -2309,6 +2554,16 @@ canvas.particles-js-canvas-el {
     bottom: -75pc;
     right: 20px;
   }
+  .app_devBoxe p {
+    font-size: 11px;
+    -webkit-line-clamp: 3;
+  }
+  .app_devBoxeIcon {
+    width: 40px;
+  }
+  .app_devBoxe h4 {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 736px) {
@@ -2367,11 +2622,11 @@ canvas.particles-js-canvas-el {
   .techVerse_services .sec_title {
     max-width: 618px;
   }
-  .our-slider-img img {
-    width: 19%;
-  }
   .our-slider-img {
-    top: -9px;
+    top: -4px;
+  }
+  .our-slider-img img {
+    width: 17.6%;
   }
   .get_discount {
     position: unset;
@@ -2439,6 +2694,44 @@ canvas.particles-js-canvas-el {
   .tech-box img {
     width: 110px;
   }
+  .our-slider-webframe img {
+    width: 55.9%;
+  }
+  .app_devBoxes {
+    margin-bottom: unset;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .app_devBoxeIcon {
+    width: 40px;
+  }
+  .app_devBoxe h4 {
+    font-size: 16px;
+  }
+  .app_devBoxe p {
+    font-size: 12px;
+    -webkit-line-clamp: 4;
+  }
+  .app_devSec {
+    margin-bottom: 0;
+  }
+  .realEstate-appSec_title {
+    margin-top: 60px;
+  }
+  .reApp_box {
+    text-align: center;
+  }
+  .reApp_box_icon {
+    margin: 0 auto;
+  }
+  .re_appDev_btns {
+    justify-content: center;
+  }
+  /* .custom_dropdown_sidebar {
+    padding: 20px 20px 20px;
+  } */
+  .customDropdown_leftCol {
+    background-color: #fff;
+  }
 }
 @media (max-width: 480px) {
   .techVerse_services .sec_title {
@@ -2488,9 +2781,16 @@ canvas.particles-js-canvas-el {
   .news_letterInput button .btn_with_icon_img {
     width: 16px;
   }
+  /* .our-slider-img img {
+    width: 52%;
+  } */
+  .our-slider-img {
+    top: -12px;
+  }
   .our-slider-img img {
     width: 52%;
   }
+
   .techVerse_testimonialsTextSec-img {
     height: 300px;
     margin: 0 auto;
@@ -2544,6 +2844,10 @@ canvas.particles-js-canvas-el {
       transform: translateX(-50%);
     }
   }
+
+  .mobileApp_devSec_img {
+    max-width: 268px;
+  }
 }
 
 @media (max-width: 428px) {
@@ -2574,6 +2878,16 @@ canvas.particles-js-canvas-el {
   .testimonial .content p {
     line-height: 2;
     font-size: 14px;
+  }
+  .app_devBoxes {
+    margin-bottom: unset;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px 10px;
+  }
+
+  .app_devBoxe {
+    max-width: 360px;
+    margin: 0 auto;
   }
 }
 

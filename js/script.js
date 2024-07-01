@@ -86,6 +86,26 @@ jQuery(document).ready(function () {
   });
 });
 
+jQuery(document).ready(function () {
+  $("#navbarDropdown").on("click", function () {
+    $(".first-dropdown-menu").toggleClass("showing");
+  });
+  //  $("#navbarDropdown").on("click", function() {
+  //    $(".first-dropdown-menu").removeClass("showing");
+  //  });
+  //    $(".first-dropdown-menu").on("mouseover", function() {
+  //    $(this).addClass("showing");
+  //  });
+
+  // $(".first-dropdown-menu").on("mouseout", function() {
+  //        $(this).removeClass("showing");
+  //      });
+
+  $("body").on("click", function () {
+    $(".first-dropdown-menu").removeClass("showing");
+  });
+});
+
 var count_particles, stats, update;
 stats = new Stats();
 stats.setMode(0);
